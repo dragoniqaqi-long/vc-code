@@ -19,16 +19,18 @@ int main()
 bool IsPrime(int a)
 {
     int i;
-    if (a >= 1)
+    if (a > 1)
     {
-        for (int i;i < a;++i)
+        for (i = 2;i < a;++i)
         {
             if (a % i == 0)
                 return false;
         }
-        if (i == a)
-            return true;
-        else
-            return false;
+    else if(a == 1)
+        return false;
+    else if (i == a)
+        return true;
+    else
+       return false;
     }
 }
