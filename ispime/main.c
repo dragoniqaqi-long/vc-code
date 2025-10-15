@@ -1,4 +1,6 @@
-#inlcude <stdio.h>
+#include <stdio.h>
+#include <stdbool.h>
+
 
 bool IsPrime(int);
 
@@ -26,11 +28,12 @@ bool IsPrime(int a)
             if (a % i == 0)
                 return false;
         }
+    }    
     else if(a == 1)
         return false;
     else if (i == a)
         return true;
     else
        return false;
-    }
+    
 }
