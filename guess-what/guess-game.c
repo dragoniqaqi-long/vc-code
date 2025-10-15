@@ -9,7 +9,7 @@ int main(void)
 	srand ( (unsigned) time (NULL) );    //设置随机数(这里同时运用了两个函数,不用理解)
 	int ans = rand() % 100 ;    //此处设置随机数范围在1-99  这两行可以网络上了解,暂时不用理解   
 	int c = 0; //以c为错误次数,没错一次,c++一次 (以上两行代码可以理解为设置a成为了1-99的随机数,且每次运行程序都是独立不同的数,那么a就是我们需要猜的数)
-	printf("猜数字游戏:\n"
+	printf("guess game\n"
 	     "请输入一个小于100的数字\n");
 	scanf("%d", &guessnum);
 	
