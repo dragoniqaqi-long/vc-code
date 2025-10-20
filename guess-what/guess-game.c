@@ -15,7 +15,7 @@ int main(void)
 	
 	int d = 7;          //猜100以内数,设置机会为7次
 	                             //使用while循环,条件即为没猜到a并且错误次数小于试错次数的情况下执行
-	while (ans != guessnum&&c < d)      
+	while (ans != guessnum&&c < d)       
 	{
 		c++;
 
